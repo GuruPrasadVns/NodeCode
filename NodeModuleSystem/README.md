@@ -1,24 +1,22 @@
-## Global Object
+## Node Module System
 
-### Global objects are part of the global scope which means we can access it from anywhere. For example, console object is a global object.
+### Global Object
 
-### There are several global objects and functions available. For Example
+#### Global objects are part of the global scope which means we can access it from anywhere. For example, console object is a global object.There are several global objects and functions available. For Example
 
-#### setTimeout() : we used it to call a function after a delay. This is availble inside the browsers and Node both.
+##### setTimeout() : we used it to call a function after a delay. This is availble inside the browsers and Node both.
 
-#### clearTimeout() : we used it to stop a function calling after a delay.
+##### clearTimeout() : we used it to stop a function calling after a delay.
 
-#### setInterval() : we used it to call a function repeatedly after a given delay.
+##### setInterval() : we used it to call a function repeatedly after a given delay.
 
-#### clearInterval() : we used it to stop a function to call repeatedly.
+##### clearInterval() : we used it to stop a function to call repeatedly.
 
-### In browsers we have window object which represents the global scope. That means all the functions and variables that are defined globally we can access them via window object.
+#### In browsers we have window object which represents the global scope. That means all the functions and variables that are defined globally we can access them via window object i.e. window.console.log() is equivalent to console.log in browsers. The Javascript engine will prefix the console.log statement with window.console.log
 
-#### i.e. window.console.log() is equivalent to console.log in browsers. The Javascript engine will prefix the console.log statement with window.console.log
+#### Similarly in Node we have the global object called global.So, console.log is equivalent to global.console.log.
 
-### Similarly in Node we have the global object called global.So, console.log is equivalent to global.console.log.
-
-### When we define any variable var message = 'Hi' in browser it can be accessed via window object but in Node it is not added in global scope automatically. Refer app.js for code example. In Node that are only scoped to the file in which they are defined.
+#### When we define any variable var message = 'Hi' in browser it can be accessed via window object but in Node it is not added in global scope automatically. Refer app.js for code example. In Node that are only scoped to the file in which they are defined.
 
 ## Modules
 
