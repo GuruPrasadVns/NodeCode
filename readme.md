@@ -1,7 +1,7 @@
 # This project can be used to learn Node concepts.
 
-# Project Structure
+## Project Structure
 
-## Node Module System
+### 1. Node Module System
 
-## Node Package Manager
+### 2. Node Package Manager
