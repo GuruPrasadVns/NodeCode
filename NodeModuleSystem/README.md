@@ -62,7 +62,7 @@
 
 ### File System Module : The fs module enables interacting with the file system
 
-#### To see the details of os module https://nodejs.org/dist/latest-v14.x/docs/api/fs.html
+#### To see the details of fs module https://nodejs.org/dist/latest-v14.x/docs/api/fs.html
 
 ### In file system module there are two versions of any method available synchronous and non-synchronous version. You should use asynchronous method in the real world application. Synchronous method is only for simplicity.
 
@@ -72,7 +72,7 @@
 
 #### An Event is basically a signal that indicates that something has happened. For example, in Node we have a class called HTTP which we can used to build a web server. Everytime when HTTP class listen any request it raises an Event.Our job is to response to that event which is basically to return a appropriate response.
 
-#### To see the details of os module https://nodejs.org/dist/latest-v14.x/docs/api/events.html
+#### To see the details of event module https://nodejs.org/dist/latest-v14.x/docs/api/events.html
 
 #### In Events module we have one important class called EventEmitter. It is one of the core builing blocks of Node and lots of classes is based on this EventEmitter.
 

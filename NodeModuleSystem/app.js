@@ -1,26 +1,26 @@
 // var message = 'Hi';
-// console.log(message);
-// console.log(global.message);
+// console.log(message); // will print Hi
+// console.log(global.message); // will print undefined
 
 
 // console.log(module);
-// console.log(global.module);
+// console.log(global.module); // will print undefined
 
 //How to export a module
-//const logger = require('./logger');
-//logger.log('Hi');
+// const logger = require('./logger');
+// logger.log('Hi');
 
 //Module wrapper function
 //console.log(__filename);
 //console.log(__dirname);
 
 //In built path module
-//const path = require('path');
-//console.log(path.parse(__dirname));
+// const path = require('path');
+// console.log(path.parse(__dirname));
 
 //In built os module
-//const os = require('os');
-//console.log(os.freemem());
+const os = require('os');
+console.log(os.freemem());
 
 //In build fs module
 
@@ -74,19 +74,19 @@
 
 //HTTP module 
 
-const http = require('http');
-const server = http.createServer((req, res) => {
-    if (req.url === '/') {
-        res.write('Home Page');
-        res.end();
-    }
-    if (req.url === '/api/courses') {
-        res.write(JSON.stringify(["java", "javascript", "node"]));
-        res.end();
-    }
-}); // server is an EventEmitter
-server.listen(3000);
-server.on('connection', (socket) => {
-    console.log('New Connection')
-})
-console.log('Listening on server port 3000....');
+// const http = require('http');
+// const server = http.createServer((req, res) => {
+//     if (req.url === '/') {
+//         res.write('Home Page');
+//         res.end();
+//     }
+//     if (req.url === '/api/courses') {
+//         res.write(JSON.stringify(["java", "javascript", "node"]));
+//         res.end();
+//     }
+// }); // server is an EventEmitter
+// server.listen(3000);
+// server.on('connection', (socket) => {
+//     console.log('New Connection')
+// })
+// console.log('Listening on server port 3000....');
